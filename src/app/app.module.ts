@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { CarService } from './car.service';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { HelloComponent } from './hello.component';
     MatButtonModule,
   ],
   declarations: [AppComponent, HelloComponent],
+  providers: [CarService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
