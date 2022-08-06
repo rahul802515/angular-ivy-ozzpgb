@@ -1,0 +1,22 @@
+<mat-toolbar class="container">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>Angular Sidenav Practice</h1>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav class="sidenav" #sidenav opened="true" mode="side">
+    <mat-nav-list>
+      <button class="btn" mat-list-item>Component 1</button>
+      <button class="btn" mat-list-item>Component 2</button>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <p>SideNav Content</p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
